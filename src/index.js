@@ -69,8 +69,8 @@ app.delete("/api/products/:id", (req, res) => {
 // Health Check (for CI/CD testing)
 // ==========================
 app.get("/api/health", (req, res) => {
-  res.status(200).json({ status: "API is healthy" });
-});
+    res.status(200).json({ status: "API is healthy"  // Missing closing brace
+    });
 
 // Start server
 app.listen(PORT, () => {
