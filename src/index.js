@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.send("Hello from Render CI/CD!");
 });
 
+app.get("/home", (req,res) => {
+    res.send("This is the Home page")
+})
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
